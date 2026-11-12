@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "summary": {
+    "internal_packages": 14,
+    "registry_packages": 200,
+    "candidate_pairs": 14,
+    "hits": 6,
+    "levenshtein_calls": 14,
+    "damerau_levenshtein_calls": 5
+  },
+  "findings": [
+    {
+      "internal": "abcde",
+      "suspect": "abdce",
+      "distance": 1,
+      "kind": "换位",
+      "risk": "高风险",
+      "internal_version": null
+    },
+    {
+      "internal": "click",
+      "suspect": "clicxk",
+      "distance": 1,
+      "kind": "插入",
+      "risk": "高风险",
+      "internal_version": "8.1.7"
+    },
+    {
+      "internal": "colorama",
+      "suspect": "colourama",
+      "distance": 1,
+      "kind": "插入",
+      "risk": "高风险",
+      "internal_version": "0.4.6"
+    },
+    {
+      "internal": "foo1bar",
+      "suspect": "foobar",
+      "distance": 1,
+      "kind": "混淆字符",
+      "risk": "高风险",
+      "internal_version": null
+    },
+    {
+      "internal": "numpy",
+      "suspect": "nuimpy",
+      "distance": 1,
+      "kind": "插入",
+      "risk": "高风险",
+      "internal_version": "1.26.4"
+    },
+    {
+      "internal": "requests",
+      "suspect": "requsts",
+      "distance": 1,
+      "kind": "删除",
+      "risk": "高风险",
+      "internal_version": "2.31.0"
+    }
+  ]
+}
